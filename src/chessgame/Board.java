@@ -1,10 +1,9 @@
 package chessgame;
 
-import java.awt.Component;
-import java.security.KeyStore.Entry;
+import java.awt.*;
+import java.security.KeyStore.*;
 
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
+import javax.swing.*;
 
 public class Board {
 	private JButton b;
@@ -23,7 +22,7 @@ public class Board {
 				            if(icon.equals(entry.getValue())){
 				 
 				                key = entry.getKey();
-				                break; //breaking because its one to one map
+				                break;
 				            }
 		        }
 		        if(key.contains("white"))
